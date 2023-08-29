@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/add.css">
+  </head>
+  <body>
+        <!-- header sec -->
+        <header>
+          <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container">
+              <a class="navbar-brand text-white flex-grow-1" href="#">
+                <img
+                  src="/images/logo.png"
+                  alt="Logo"
+                  width="100"
+                  height="30"
+                  class="d-inline-block align-text-top"
+              /></a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="sidebar offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              ></div>
+              <h3 style="color: rgb(245, 8, 146)">Add Products</h3>
+            </div>
+          </nav>
+        </header>
+        <!-- header sec ends  -->
+    <div
+      class="container d-flex justify-content-center align-items-center vh-100"
+    >
+      <!-- Center-aligning the form vertically and horizontally -->
+      <div class="row">
+        <div class="col">
+          
+          <form id="productform">
+            <h3 style="color: rgb(245, 8, 146)">Add Products here</h3>
+            <label for="productname">Product Name:</label> <br />
+            <input
+              type="text"
+              id="productname"
+              name="productname"
+              required
+            /><br /><br />
+
+            <label for="productquantity">Product Quantity:</label> <br />
+            <input
+              type="number"
+              id="productquantity"
+              name="productquantity"
+              required
+            /><br /><br />
+
+            <label for="productmrp">Product MRP Price:</label><br />
+            <input
+             
+           
+              id="productmrp"
+              name="productmrp"
+            
+            /><br /><br />
+
+            <label for="productsalesprice">Product Sales Price:</label><br />
+            <input
+             
+            
+              id="productsalesprice"
+              name="productsalesprice"
+              
+            /><br /><br />
+            <label for="productcreatedate">Product Create Date:</label><br />
+            <input
+              id="productcreatedate"
+              name="productcreatedate"
+              value=""
+              disabled
+            /><br /><br />
+
+            <input type="submit" value="Submit" />
+            <p id="error" class="text-danger mt-3" style="font-size: 18px;"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- Footer  -->
+     <section class="mt-5" id="footer">
+      <div class="container">
+        <div class="row pt-2 d-flex justify-content-between">
+          <div class="col-lg-2 col-md-6 p-2">
+            <a class="navbar-brand text-white" href="#">
+              <img
+                src="/images/logo.png"
+                alt="Logo"
+                width="100"
+                height="30"
+                class="d-inline-block mt-3 mb-4"
+            /></a>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur <br />
+              adipisicing elit. Lore
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 p-2">
+            <h6 class="text-white mb-4 mt-3">Features</h6>
+            <a role="button">Others</a>
+            <a role="button">Game</a>
+            <a role="button">Art</a>
+            <a role="button">Defi</a>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 p-2">
+            <h6 class="text-white mb-4 mt-3">Services</h6>
+            <a role="button">About</a>
+            <a role="button">My Home Page</a>
+            <a role="button">My Nft's</a>
+            <a role="button">Account Settings</a>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 p-2">
+            <h6 class="text-white mb-4 mt-3">Info</h6>
+            <a role="button">Faq</a>
+            <a role="button">Terms</a>
+            <a role="button">privacy policy</a>
+            <a role="button">News</a>
+          </div>
+          <div class="col-lg-2 col-md-6 col-sm-6 p-2">
+            <h6 class="text-white mb-4 mt-3">Community</h6>
+            <a role="button">Facebook</a>
+            <a role="button">Twitter</a>
+            <a role="button">Instagram</a>
+            <a role="button">Youtube</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Ends -->
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/add.js"></script>
+  </body>
+</html>
